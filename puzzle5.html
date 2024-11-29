@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div id="puzzle-container">
+                <h2>Communication Device</h2>
+                <p id="device-screen">Connection required. Type protocol code in Morse to continue.</p> <p id="device-screen1">Connection Status: No Connection</p>
+                <div id="keypad">
+                    <label for="morse-input">Input:</label>
+                    <input type="text" id="morse-input" placeholder="Type your code here">
+                    <button id="send-code">Send</button>
+                </div>
+                <p id="morse-output">Output: </p>
+            </div>
+            <button onclick="goToNextPage5()">WORSE</button>
+        </div>
+        <div class="fuzzy-overlay"></div>
+        <div class="overlay"></div>
+        <div class="overlay2"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

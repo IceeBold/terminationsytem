@@ -1,0 +1,208 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 40px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures centered text alignment */
+    color: #810000;
+    font-family: 'Courier New', sans-serif;
+    font-size: 40px;
+    color: #770000;
+    animation: shake 0.1s ease-in-out infinite;
+}
+
+.content {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.fuzzy-overlay {
+    position: absolute;
+    inset: -200%; /* Covers a larger area for the overlay effect */
+    background-image: url("noise.png");
+    opacity: 0.25; /* Corrected to a valid value (25% is invalid) */
+    z-index: 0;
+    pointer-events: none; /* Uncommented to ensure the overlay does not affect interactions */
+
+    animation: shift 0.2s linear infinite both;
+}
+
+/* Corrected @keyframes block */
+@keyframes shift {
+    0% {
+        transform: translateX(10%) translateY(10%);
+    }
+    100% {
+        transform: translateX(-10%) translateY(-10%);
+    }
+}
+
+button {
+    padding: 10px 200px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.3s ease, transform 0.2s ease;
+    z-index: 6;
+    stroke: #000000;
+    stroke-width: 5px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    animation: shake 0.1s ease-in-out
+}
+
+button:hover {
+    background: transparent;
+    transform: scale(1.05); /* Slight zoom effect */
+    animation: shake 0.1s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(0px); }  /* More extreme left */
+    50% { transform: translateX(5px); }   /* More extreme right */
+    75% { transform: translateX(5px); }  /* More extreme left again */
+    100% { transform: translateX(0); }
+}
+
+img {
+    max-width: 100%;
+    height: 350px;
+    transform: rotate(8deg);
+    padding: 10px;
+    
+}
+
+.overlay {
+    position: absolute;
+    inset: -200%; /* Covers a larger area for the overlay effect */
+    background-image: url("glitch.png");
+    opacity: 0.25; /* Corrected to a valid value (25% is invalid) */
+    z-index: 0;
+    pointer-events: none; /* Uncommented to ensure the overlay does not affect interactions */
+
+    animation: shift1 0.2s linear infinite both;
+}
+
+@keyframes shift1 {
+    0% {
+        transform: translateX(-1%) translateY(1%);
+    }
+}
+
+para {
+    padding: 10px;
+}
+
+a{
+    color: rgb(255, 255, 255);
+}
+
+.command-line {
+background-color: transparent;
+border: transparent;
+}
+
+  #terminal {
+    width: 80%;
+    height: 80%;
+    background-color: #111;
+    border: 2px solid #0f0;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0px 0px 20px #0f0;
+  }
+  
+  /* Terminal Output */
+  #output {
+    flex-grow: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+  }
+  
+  /* Command Line */
+  .input-line {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-line span {
+    color: #0f0;
+    margin-right: 5px;
+  }
+  
+  #command-line {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    color: #0f0;
+    font-size: 16px;
+    outline: none;
+    caret-color: #0f0;
+  }
+  
+
+
+#device-screen {
+    background-color: #111;
+    color: #0f0;
+    padding: 20px;
+    border: 2px solid #0f0;
+    margin-bottom: 20px;
+}
+
+input {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+#keypad {
+    margin-top: 20px;
+}
+
+#send-code {
+    background-color: transparent;
+    color: #fff;
+}
+
+#send-code:hover {
+    background-color:transparent;
+}
+
+#device-screen1 {
+    background-color: #111;
+    color: red;
+    border: 2px solid rgb(139, 0, 0);
+    padding: 5px;
+    width: 200px;
+}
