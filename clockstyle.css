@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #000000;
+    color: red;
+}
+
+.countdown {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#time {
+    font-size: 4rem;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background: #000000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Animation for the time element */
+#time.animate {
+    transform: scale(1.1); /* Slightly enlarge the text */
+    color: #ff6347; /* Change color */
+}
+
+h1, #time {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Simple fade-in animation for elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.overlay {
+    position: absolute;
+    inset: -200%; /* Covers a larger area for the overlay effect */
+    background-image: url("glitch.png");
+    opacity: 0.25; /* Corrected to a valid value (25% is invalid) */
+    z-index: 0;
+    pointer-events: none; /* Uncommented to ensure the overlay does not affect interactions */
+
+    animation: shift1 0.2s linear infinite both;
+}
+
+.fuzzy-overlay {
+    position: absolute;
+    inset: -200%; /* Covers a larger area for the overlay effect */
+    background-image: url("noise.png");
+    opacity: 0.25; /* Corrected to a valid value (25% is invalid) */
+    z-index: 0;
+    pointer-events: none; /* Uncommented to ensure the overlay does not affect interactions */
+
+    animation: shift 0.2s linear infinite both;
+}
+
+/* Corrected @keyframes block */
+@keyframes shift {
+    0% {
+        transform: translateX(10%) translateY(10%);
+    }
+    100% {
+        transform: translateX(-10%) translateY(-10%);
+    }
+}
+
+@keyframes shift1 {
+    0% {
+        transform: translateX(-1%) translateY(1%);
+    }
+}
