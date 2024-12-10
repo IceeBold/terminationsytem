@@ -53,7 +53,7 @@ h1, #time {
     inset: -200%; /* Covers a larger area for the overlay effect */
     background-image: url("glitch.png");
     opacity: 0.25; /* Corrected to a valid value (25% is invalid) */
-    z-index: 0;
+    z-index: -1;
     pointer-events: none; /* Uncommented to ensure the overlay does not affect interactions */
 
     animation: shift1 0.2s linear infinite both;
@@ -64,7 +64,7 @@ h1, #time {
     inset: -200%; /* Covers a larger area for the overlay effect */
     background-image: url("noise.png");
     opacity: 0.25; /* Corrected to a valid value (25% is invalid) */
-    z-index: 0;
+    z-index: -1;
     pointer-events: none; /* Uncommented to ensure the overlay does not affect interactions */
 
     animation: shift 0.2s linear infinite both;
