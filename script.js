@@ -14,6 +14,10 @@ function goToNextPage3() {
 function goToNextPage4() {
     window.location.href = "4pnr5638GkcWdor.html"; // Replace with the actual URL or file path
 }
+function goToNextPage5() {
+    window.location.href = "2dy2376fk83301hhfslsmdD2.html"; // Replace with the actual URL or file path
+}
+
 
 const terminalOutput = document.getElementById("output");
 const commandLine = document.getElementById("command-line");
