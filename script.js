@@ -1,6 +1,6 @@
 // JavaScript function to redirect to the next page
 function goToNextPage() {
-    window.location.href = "puzzle.html"; // Replace with the actual URL or file path
+    window.location.href = "3jkd2194LlpFhas.html"; // Replace with the actual URL or file path
 }
 function goToNextPage1() {
     window.location.href = "puzzle2.html"; // Replace with the actual URL or file path
