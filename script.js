@@ -3,7 +3,7 @@ function goToNextPage() {
     window.location.href = "3jkd2194LlpFhas.html"; // Replace with the actual URL or file path
 }
 function goToNextPage1() {
-    window.location.href = "puzzle2.html"; // Replace with the actual URL or file path
+    window.location.href = "5hgm3827NnpQwez.html"; // Replace with the actual URL or file path
 }
 function goToNextPage2() {
     window.location.href = "puzzle3.html"; // Replace with the actual URL or file path
